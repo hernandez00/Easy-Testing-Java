@@ -11,7 +11,7 @@ public class Dashboard {
     }
 
     public boolean isLogged() {
-        return this.driver.getTitle().equals("EASY - Dashboard");
+        return this.driver.getTitle().equals("EASY - Login Unidas"); //EASY - Dashboard
     }
 
 }

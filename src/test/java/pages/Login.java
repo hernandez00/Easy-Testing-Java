@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Login {
 
-    final WebDriver driver;
+    WebDriver driver;
     //Construtor. Toda página precisará do webdriver para encontrar os elementos
     public Login(WebDriver driver) {
         this.driver = driver;

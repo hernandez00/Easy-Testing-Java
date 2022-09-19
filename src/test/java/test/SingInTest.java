@@ -1,9 +1,8 @@
 package test;
 
 import java.time.Duration;
-import static org.junit.jupiter.api.Assertions.fail;
-import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
+import dev.failsafe.internal.util.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -39,8 +38,7 @@ public class SingInTest {
 
         loginPG.Login_Action("41328599833", "a@449f9054");
         System.out.println(driver.getTitle());
-        assumeTrue(dashPG.isLogged());
-        fail("Deu tudo errado!");
+        Assert.isTrue(dashPG.isLogged(), "Deu ruim!");
     }
 
 }
